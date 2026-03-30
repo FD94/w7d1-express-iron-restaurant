@@ -18,26 +18,6 @@ app.use(express.json());
 
 
 
-/**************************/
-/* EXAMPLES OF MIDDLEWARE */
-/**************************/
-
-function sayHello(req, res, next) {
-    console.log("hello world")
-    next()
-}
-
-function sayGoodbye(req, res, next) {
-    console.log("goodbye")
-    next()
-}
-
-app.use(sayHello)
-app.use(sayGoodbye)
-
-
-
-
 
 /**********/
 /* ROUTES */
